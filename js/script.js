@@ -88,6 +88,18 @@ question7(cats);
 
 // Create a function called createCats. The function will have one parameter called cats.
 
+// Inside the function loop through the value passed in as cats and create HTML for each object in the array.
+
+// Wrap each item in a div, each name property in an h5 tag and each age property in a p tag.
+
+// If the age property is missing, it should display “Age unknown” instead.
+
+// Return the HTML from the function.
+
+// Call the function and pass in the cats array as the argument.
+
+// Assign the return value of the function to the innerHTML property of the element on the HTML page with a class of cat-container.
+
 function createCats(cats) {
   let catsHtml = ``;
   for (let i = 0; i < cats.length; i++) {
@@ -100,17 +112,6 @@ function createCats(cats) {
   return catsHtml;
 }
 
-// Inside the function loop through the value passed in as cats and create HTML for each object in the array.
-
-// Wrap each item in a div, each name property in an h5 tag and each age property in a p tag.
-
-// If the age property is missing, it should display “Age unknown” instead.
-
-// Return the HTML from the function.
-
-// Call the function and pass in the cats array as the argument.
-
-// Assign the return value of the function to the innerHTML property of the element on the HTML page with a class of cat-container.
 const catCointainer = document.querySelector(".cat-container");
 
 catCointainer.innerHTML = createCats(cats);
